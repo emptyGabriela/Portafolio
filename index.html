@@ -10,12 +10,14 @@
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#0ea5e9" />
   <style>
+
+    
     :root{
-      --bg: #0b1020;            /* fondo base */
-      --panel: #0f172a;         /* contenedores */
-      --muted: #94a3b8;         /* texto secundario */
-      --text: #e2e8f0;          /* texto base */
-      --brand: #22d3ee;         /* acentos */
+      --bg: #0b1020;            
+      --panel: #0f172a;       
+      --muted: #94a3b8;         
+      --text: #e2e8f0;          
+      --brand: #22d3ee;         
       --brand-2:#38bdf8;
       --chip:#0b5;
       --border:#23324d;
@@ -76,14 +78,17 @@
       header.hero{border:none}
       body{background:#fff; color:#111}
       a{color:#0366d6}
+
+      
     }
+    
   </style>
 </head>
 <body>
   <div class="wrap">
     <header class="hero" id="inicio">
       <div class="hero-top">
-        <div class="avatar" aria-hidden="true">KP</div>
+        <img src="mi-foto.jpeg" alt="Foto de Katherin Pérez" class="avatar-img">
         <div>
           <h1>Katherin Pérez <span class="tag">Junior Software Developer</span></h1>
           <p class="lead">Desarrolladora en formación (Ing. Informática) con experiencia práctica en aplicaciones web y móviles. Enfoque en desarrollo Android (Kotlin), React, JavaScript, HTML/CSS, SQL y prácticas de desarrollo seguro.</p>
@@ -93,7 +98,7 @@
             <a class="pill" href="tel:+50364336069" title="Llamar">📞 +503 6433‑6069</a>
           </div>
           <div class="quick">
-            <a class="btn" href="https://github.com/emptyGabriela" target="_blank" rel="noopener">🐙 GitHub</a>
+            <a class="btn" href="https://github.com/emptyGabriela" target="_blank" rel="noopener">🐱 GitHub</a>
             <a class="btn" href="https://www.linkedin.com/jobs/search/?currentJobId=4253010903&distance=25.0&geoId=106522560&keywords=junior&origin=JOBS_HOME_KEYWORD_HISTORY" target="_blank" rel="noopener">🔗 LinkedIn</a>
             <button class="btn print-hide" onclick="window.print()">🖨️ Imprimir</button>
           </div>
@@ -229,7 +234,7 @@
       </div>
       <div class="card" id="idiomas">
         <h3>Idiomas</h3>
-        <p class="small"><strong>Español</strong> (Nativo) · <strong>Inglés</strong> (Profesional) · <strong>Francés</strong> (Elemental) · <strong>Coreano</strong> (Limitado)</p>
+        <p class="small"><span aria-label="Español">🇪🇸</span> <strong>Español</strong> (Nativo) · <span aria-label="Inglés">🇬🇧</span> <strong>Inglés</strong> (Profesional) · <span aria-label="Francés">🇫🇷</span> <strong>Francés</strong> (Elemental) · <span aria-label="Coreano">🇰🇷</span> <strong>Coreano</strong> (Limitado)</p>
       </div>
     </section>
 
@@ -250,13 +255,13 @@
         <div class="chips">
           <a class="pill" href="mailto:kgabrielapb@ieee.org">✉️ Enviar correo</a>
           <a class="pill" href="tel:+50364336069">📞 Llamar</a>
-          <a class="pill" href="https://github.com/emptyGabriela" target="_blank" rel="noopener">🐙 GitHub</a>
+          <a class="pill" href="https://github.com/emptyGabriela" target="_blank" rel="noopener">🐱 GitHub</a>
           <a class="pill" href="https://www.linkedin.com/jobs/search/?currentJobId=4253010903&distance=25.0&geoId=106522560&keywords=junior&origin=JOBS_HOME_KEYWORD_HISTORY" target="_blank" rel="noopener">🔗 LinkedIn</a>
         </div>
       </div>
       <div class="card">
         <h3>Disponibilidad</h3>
-        <p class="small">Interesada en roles <strong>Junior</strong> o <strong>Prácticas</strong> en desarrollo <em>Android</em> o <em>Web</em> (Frontend/Full‑Stack). Modalidad híbrida o remota.</p>
+        <p class="small">Interesada en roles <strong>Junior</strong> (Android / Web / <strong>QA</strong>) o <strong>Prácticas</strong>. Modalidad híbrida o remota.</p>
         <p class="small muted" id="updated"></p>
       </div>
     </section>
