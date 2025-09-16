@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Katherin Pérez — Junior Software Developer</title>
+  <meta name="description" content="Portafolio de Katherin Pérez — Junior Software Developer. Experiencia en Android (Kotlin), React, JavaScript, HTML/CSS, SQL. Instructora de Desarrollo Seguro y Bases de Datos en la UCA." />
+  <meta property="og:title" content="Katherin Pérez — Junior Software Developer" />
+  <meta property="og:description" content="Portafolio, experiencia, proyectos, habilidades y contacto." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <style>
+    :root{
+      --bg: #0b1020;            /* fondo base */
+      --panel: #0f172a;         /* contenedores */
+      --muted: #94a3b8;         /* texto secundario */
+      --text: #e2e8f0;          /* texto base */
+      --brand: #22d3ee;         /* acentos */
+      --brand-2:#38bdf8;
+      --chip:#0b5;
+      --border:#23324d;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f7fafc; --panel:#ffffff; --muted:#5b6b7a; --text:#0f172a; --brand:#0ea5e9; --brand-2:#06b6d4; --border:#e2e8f0;
+      }
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0; background:var(--bg); color:var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";}
+    a{color:var(--brand-2); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1080px; margin:auto; padding:24px}
+    header.hero{
+      background: radial-gradient(1000px 500px at 100% -10%, rgba(56,189,248,.15), transparent 60%),
+                  radial-gradient(700px 400px at 0% 110%, rgba(34,211,238,.15), transparent 60%);
+      border-radius:24px; padding:28px; border:1px solid var(--border);
+    }
+    .hero-top{display:flex; align-items:center; gap:18px; flex-wrap:wrap}
+    .avatar{width:84px; height:84px; border-radius:50%; background: linear-gradient(145deg, var(--brand), var(--brand-2)); display:grid; place-items:center; color:#002; font-weight:800; font-size:28px}
+    .hero h1{margin:0; font-size:clamp(24px, 4vw, 40px)}
+    .hero p.lead{margin:6px 0 0; color:var(--muted)}
+    .quick{margin-top:16px; display:flex; gap:10px; flex-wrap:wrap}
+    .btn{display:inline-flex; align-items:center; gap:8px; background:var(--panel); color:var(--text); border:1px solid var(--border); padding:10px 14px; border-radius:12px}
+    .btn:hover{transform:translateY(-1px); box-shadow:0 6px 18px rgba(2,8,23,.18)}
+    nav ul{list-style:none; padding:0; margin:22px 0 0; display:flex; gap:14px; flex-wrap:wrap}
+    nav a{display:inline-block; padding:8px 12px; border-radius:10px; background:var(--panel); border:1px solid var(--border)}
+
+    section{margin-top:28px}
+    .grid{display:grid; gap:16px}
+    @media (min-width:900px){
+      .grid-2{grid-template-columns:1.3fr .9fr}
+      .grid-3{grid-template-columns:repeat(3, 1fr)}
+    }
+    .card{background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:18px}
+    .card h3{margin:0 0 6px}
+    .muted{color:var(--muted)}
+    .chips{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px}
+    .chip{font-size:12px; border:1px solid var(--border); background:rgba(56,189,248,.08); padding:6px 10px; border-radius:999px}
+    .list{display:grid; gap:12px}
+    .row{display:flex; align-items:flex-start; gap:12px}
+    .row .dot{min-width:8px; height:8px; background:var(--brand); border-radius:50%; margin-top:7px}
+    .pill{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border-radius:999px; border:1px solid var(--border); background:var(--panel)}
+    .kpi{display:flex; gap:18px; flex-wrap:wrap; margin-top:8px}
+
+    footer{margin:36px 0 12px; color:var(--muted); text-align:center}
+    .small{font-size:12px}
+    .tag{display:inline-block; padding:4px 8px; border:1px solid var(--border); border-radius:999px; font-size:12px; color:var(--muted)}
+    .divider{height:1px; background:var(--border); margin:10px 0 16px}
+    .two-col{columns:2; column-gap:16px}
+    @media (max-width:800px){.two-col{columns:1}}
+
+    /* Print */
+    @media print{
+      nav, .quick, .print-hide{display:none}
+      .wrap{padding:0}
+      header.hero{border:none}
+      body{background:#fff; color:#111}
+      a{color:#0366d6}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero" id="inicio">
+      <div class="hero-top">
+        <div class="avatar" aria-hidden="true">KP</div>
+        <div>
+          <h1>Katherin Pérez <span class="tag">Junior Software Developer</span></h1>
+          <p class="lead">Desarrolladora en formación (Ing. Informática) con experiencia práctica en aplicaciones web y móviles. Enfoque en desarrollo Android (Kotlin), React, JavaScript, HTML/CSS, SQL y prácticas de desarrollo seguro.</p>
+          <div class="kpi">
+            <span class="pill" title="Ubicación">📍 Ciudad Arce, La Libertad, El Salvador</span>
+            <a class="pill" href="mailto:kgabrielapb@ieee.org" title="Enviar correo">✉️ kgabrielapb@ieee.org</a>
+            <a class="pill" href="tel:+50364336069" title="Llamar">📞 +503 6433‑6069</a>
+          </div>
+          <div class="quick">
+            <a class="btn" href="https://github.com/emptyGabriela" target="_blank" rel="noopener">🐙 GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/jobs/search/?currentJobId=4253010903&distance=25.0&geoId=106522560&keywords=junior&origin=JOBS_HOME_KEYWORD_HISTORY" target="_blank" rel="noopener">🔗 LinkedIn</a>
+            <button class="btn print-hide" onclick="window.print()">🖨️ Imprimir</button>
+          </div>
+        </div>
+      </div>
+      <nav aria-label="Secciones" class="print-hide">
+        <ul>
+          <li><a href="#resumen">Resumen</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#educacion">Educación</a></li>
+          <li><a href="#certificaciones">Certificaciones</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#idiomas">Idiomas</a></li>
+          <li><a href="#comunidad">Liderazgo</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="resumen" class="grid grid-2">
+      <article class="card">
+        <h3>Resumen profesional</h3>
+        <p>Soy estudiante de Ingeniería Informática en etapa final, con experiencia impartiendo cursos de <strong>Desarrollo Seguro</strong> y <strong>Bases de Datos</strong> en la UCA. He desarrollado una app Android nativa con <strong>Jetpack Compose</strong> y <strong>Retrofit</strong>, e interfaces web con <strong>HTML/SCSS/JavaScript</strong>. Me caracterizo por la comunicación efectiva, el trabajo en equipo y el aprendizaje continuo.</p>
+      </article>
+      <aside class="card">
+        <h3>Stack principal</h3>
+        <div class="chips">
+          <span class="chip">Kotlin • Android</span>
+          <span class="chip">React • JavaScript</span>
+          <span class="chip">HTML • CSS/SCSS • Tailwind</span>
+          <span class="chip">Node.js • Express</span>
+          <span class="chip">MongoDB • SQL Server</span>
+          <span class="chip">Git • GitHub</span>
+        </div>
+      </aside>
+    </section>
+
+    <section id="experiencia">
+      <h2>Experiencia</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Course Instructor — Desarrollo Seguro</h3>
+          <div class="muted">Universidad Centroamericana "José Simeón Cañas" • 08/2025 – Actualidad • Antiguo Cuscatlán</div>
+          <div class="divider"></div>
+          <ul class="list">
+            <li class="row"><span class="dot"></span><span>Formación en prácticas de <strong>ciberseguridad</strong> y <strong>secure coding</strong> en entornos web y móviles.</span></li>
+            <li class="row"><span class="dot"></span><span>Diseño de ejercicios prácticos con escenarios de amenazas reales y uso de <em>análisis estático/dinámico</em>.</span></li>
+            <li class="row"><span class="dot"></span><span>Buenas prácticas de gestión de contraseñas, cifrado y control de acceso en el ciclo de vida de software.</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Course Instructor — Bases de Datos</h3>
+          <div class="muted">Universidad Centroamericana "José Simeón Cañas" • 01/2025 – 06/2025 • Antiguo Cuscatlán</div>
+          <div class="divider"></div>
+          <ul class="list">
+            <li class="row"><span class="dot"></span><span>Uso de ejemplos visuales y casos reales para mejorar la comprensión de <strong>modelado</strong> y <strong>SQL</strong>.</span></li>
+            <li class="row"><span class="dot"></span><span>Lecciones interactivas para distintos estilos de aprendizaje y evaluación continua.</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Frontend Developer — Noctua UCA</h3>
+          <div class="muted">Universidad Centroamericana "José Simeón Cañas" • 01/2024 – 07/2024</div>
+          <div class="divider"></div>
+          <ul class="list">
+            <li class="row"><span class="dot"></span><span>App Android nativa con <strong>Jetpack Compose</strong> + <strong>Retrofit</strong>, módulos de perfil, malla, QR, mapas y horarios.</span></li>
+            <li class="row"><span class="dot"></span><span>Integración con backend <strong>Express.js</strong> + <strong>MongoDB</strong>.</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Full Stack Web Developer — ORDINO</h3>
+          <div class="muted">Universidad Centroamericana "José Simeón Cañas" • 07/2023 – 12/2023</div>
+          <div class="divider"></div>
+          <ul class="list">
+            <li class="row"><span class="dot"></span><span>Plataforma web para gestión médica con <strong>HTML</strong>, <strong>SCSS</strong> y <strong>JavaScript</strong>.</span></li>
+            <li class="row"><span class="dot"></span><span>Gestión y visualización segura de datos de pacientes, y comunicación interna eficiente.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="grid grid-2">
+      <article class="card">
+        <h3>Proyectos destacados</h3>
+        <p class="muted small">Breve resumen de proyectos donde participé activamente.</p>
+        <ul class="list">
+          <li class="row"><span class="dot"></span><span><strong>Noctua UCA (Android)</strong> — Interfaz adaptable por tipo de usuario, almacenamiento seguro de credenciales, consumo de APIs, mapas y horarios.</span></li>
+          <li class="row"><span class="dot"></span><span><strong>ORDINO (Web)</strong> — UI responsiva para clínicas, módulos de pacientes, mensajería interna y reportes.</span></li>
+        </ul>
+      </article>
+      <aside class="card">
+        <h3>Logros y comunidad</h3>
+        <ul class="list">
+          <li class="row"><span class="dot"></span><span>Vicepresidenta, <strong>Comunidad Estudiantil de Ingeniería Informática</strong> (2025).</span></li>
+          <li class="row"><span class="dot"></span><span>Vicepresidenta, <strong>IEEE Computer Society</strong> (2025).</span></li>
+          <li class="row"><span class="dot"></span><span>Miembro, <strong>Club Estudiantil de Ciberseguridad</strong> (2025).</span></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="educacion" class="grid grid-2">
+      <article class="card">
+        <h3>Educación</h3>
+        <p><strong>Universidad Centroamericana “José Simeón Cañas” (UCA)</strong> — <em>Ing. Informática</em><br>
+        Antiguo Cuscatlán, El Salvador • <span class="muted">Previsto: 11/2026</span></p>
+      </article>
+      <aside class="card" id="certificaciones">
+        <h3>Certificaciones</h3>
+        <ul class="list">
+          <li class="row"><span class="dot"></span><span><strong>ICT Academy – Huawei</strong> • <em>Data Communication and Network</em> • 06/2025</span></li>
+          <li class="row"><span class="dot"></span><span><strong>INSAFORP</strong> • <em>Introducción a UI/UX Design</em> • 11/2023</span></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="habilidades" class="grid grid-3">
+      <div class="card">
+        <h3>Habilidades blandas</h3>
+        <div class="chips">
+          <span class="chip">Comunicación efectiva</span>
+          <span class="chip">Trabajo en equipo</span>
+          <span class="chip">Adaptabilidad</span>
+          <span class="chip">Resolución de problemas</span>
+          <span class="chip">Aprendizaje rápido</span>
+          <span class="chip">Atención al detalle</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Herramientas y lenguajes</h3>
+        <div class="two-col">
+          <p class="small"><strong>C#</strong> (Muy bueno) · <strong>C++</strong> (Muy bueno) · <strong>Python</strong> (Intermedio) · <strong>Git</strong> (Bueno) · <strong>SQL Server</strong> (Bueno) · <strong>MongoDB</strong> (Bueno) · <strong>Kotlin</strong> (Bueno) · <strong>React</strong> (Muy bueno) · <strong>JavaScript</strong> (Muy bueno) · <strong>CSS</strong> (Avanzado) · <strong>Tailwind</strong> (Avanzado) · <strong>Node.js</strong> (Bueno)</p>
+        </div>
+      </div>
+      <div class="card" id="idiomas">
+        <h3>Idiomas</h3>
+        <p class="small"><strong>Español</strong> (Nativo) · <strong>Inglés</strong> (Profesional) · <strong>Francés</strong> (Elemental) · <strong>Coreano</strong> (Limitado)</p>
+      </div>
+    </section>
+
+    <section id="comunidad" class="card">
+      <h3>Liderazgo y comunidad</h3>
+      <p class="muted small">Actividades extracurriculares que refuerzan habilidades de organización, liderazgo y colaboración.</p>
+      <ul class="list">
+        <li class="row"><span class="dot"></span><span>Vicepresidenta 2025 — <strong>Comunidad Estudiantil de Ingeniería Informática</strong> (UCA).</span></li>
+        <li class="row"><span class="dot"></span><span>Vicepresidenta 2025 — <strong>IEEE Computer Society</strong> (UCA).</span></li>
+        <li class="row"><span class="dot"></span><span>Miembro — <strong>Club Estudiantil de Ciberseguridad</strong> (UCA).</span></li>
+      </ul>
+    </section>
+
+    <section id="contacto" class="grid grid-2">
+      <div class="card">
+        <h3>Contacto</h3>
+        <p class="small">¿Deseas colaborar o tienes una oportunidad laboral? Escríbeme o agenda una llamada.</p>
+        <div class="chips">
+          <a class="pill" href="mailto:kgabrielapb@ieee.org">✉️ Enviar correo</a>
+          <a class="pill" href="tel:+50364336069">📞 Llamar</a>
+          <a class="pill" href="https://github.com/emptyGabriela" target="_blank" rel="noopener">🐙 GitHub</a>
+          <a class="pill" href="https://www.linkedin.com/jobs/search/?currentJobId=4253010903&distance=25.0&geoId=106522560&keywords=junior&origin=JOBS_HOME_KEYWORD_HISTORY" target="_blank" rel="noopener">🔗 LinkedIn</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Disponibilidad</h3>
+        <p class="small">Interesada en roles <strong>Junior</strong> o <strong>Prácticas</strong> en desarrollo <em>Android</em> o <em>Web</em> (Frontend/Full‑Stack). Modalidad híbrida o remota.</p>
+        <p class="small muted" id="updated"></p>
+      </div>
+    </section>
+
+    <footer>
+      <p class="small">© <span id="year"></span> Katherin Pérez. Hecho con HTML + CSS. Una sola página (index.html).</p>
+    </footer>
+  </div>
+
+  <script>
+    // Marcar última actualización y año actual
+    const now = new Date();
+    document.getElementById('year').textContent = now.getFullYear();
+    const fecha = now.toLocaleDateString('es-SV', { day:'2-digit', month:'long', year:'numeric' });
+    const el = document.getElementById('updated');
+    if(el){ el.textContent = `Última actualización: ${fecha}`; }
+  </script>
+
+  <!-- Datos estructurados (Person) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Katherin Pérez",
+    "jobTitle": "Junior Software Developer",
+    "email": "mailto:kgabrielapb@ieee.org",
+    "telephone": "+50364336069",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ciudad Arce",
+      "addressRegion": "La Libertad",
+      "addressCountry": "SV"
+    },
+    "sameAs": [
+      "https://github.com/emptyGabriela",
+      "https://www.linkedin.com/jobs/search/?currentJobId=4253010903&distance=25.0&geoId=106522560&keywords=junior&origin=JOBS_HOME_KEYWORD_HISTORY"
+    ]
+  }
+  </script>
+</body>
+</html>
