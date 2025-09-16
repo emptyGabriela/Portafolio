@@ -2,10 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{ --bg:#0b1020; --card:#0f1430; }
+:root{
+  --bg:#ffffff;
+  --card:#e5eaf2;
+  --muted:#6b7280;
+  --brand-50:#ffffff;
+  --brand-100:#ffffff;
+  --brand-200:#ffffff;
+  --brand-300:#e5eaf2;
+  --brand-400:#d1dbe8;
+  --brand-500:#b5c5da;
+  --brand-600:#9ab0cc;
+  --brand-700:#7f9bbf;
+  --brand-800:#6485b1;
+  --brand-900:#4f719e;
+}
 
 html, body { height: 100%; }
-body { @apply bg-[var(--bg)] text-white antialiased; }
+body { @apply bg-[var(--bg)] text-slate-900 antialiased; }
 
 .container { @apply max-w-6xl mx-auto px-4; }
 .section { @apply container py-16; }
@@ -13,7 +27,7 @@ body { @apply bg-[var(--bg)] text-white antialiased; }
 .h2 { @apply text-2xl md:text-3xl font-semibold; }
 .p { @apply text-base leading-relaxed text-slate-300; }
 
-.card { @apply bg-[var(--card)]/80 backdrop-blur rounded-2xl border border-white/10 shadow-xl; }
+.card { @apply bg-[var(--card)]/80 backdrop-blur rounded-2xl border border-[var(--brand-300)] shadow-xl; }
 .badge { @apply inline-flex items-center px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-200 text-xs font-medium; }
 .timeline { @apply relative pl-6; }
 .timeline:before { content:""; @apply absolute left-2 top-0 bottom-0 w-px bg-white/10; }
